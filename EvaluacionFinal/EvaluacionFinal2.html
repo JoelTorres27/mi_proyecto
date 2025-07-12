@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras Básico</title>
+    <link rel="stylesheet" href="EvaluacionStyles.css">
+</head>
+<body class="cart-page">
+
+    <header class="main-header">
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <main class="main-content">
+        <section class="products-section">
+            <div class="product-selection-container">
+                <label for="productSelect">Selecciona un producto:</label>
+                <select id="productSelect" class="product-dropdown">
+                    </select>
+                <button id="addSelectedProductBtn" class="add-to-cart-general-btn">
+                    Agregar Producto
+                </button>
+            </div>
+        </section>
+
+        <section class="cart-section">
+            <h2>Mi Carrito</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="itemsCarrito">
+                </tbody>
+            </table>
+
+            <div class="total-carrito">
+                <span>Total: </span>
+                <span id="montoTotal">0.00</span> $
+            </div>
+
+            <div class="acciones-carrito">
+                <button id="btnFinalizarCompra">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="ScriptEvaluacion.js"></script>
+</body>
+</html>
